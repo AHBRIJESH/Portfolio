@@ -5,6 +5,17 @@ import Animated from "./Animated"; // 👈 import the helper
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "BUSINESS ANALYST INTERN",
+      company: "AAMIN DATA SOLUTIONS",
+      period: "MAY 2025 – PRESENT",
+      description: [
+        "Developing a KNIME starter pack (10 workflows) and basic ACL scripts to automate audit testing and outlier detection.",
+        "Building data validation components and intuitive GUIs to streamline workflows and improve navigation.",
+        "Exploring AI techniques for exception detection and advancing audit automation.",
+        "Automating report generation and insights extraction, enabling auditors to focus on high-value analysis.",
+      ],
+    },
+    {
       title: "AI INTERN",
       company: "AICTE INNOVATIVE INTERN",
       period: "AUGUST 2024 – NOVEMBER 2024",
