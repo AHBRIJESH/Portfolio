@@ -19,7 +19,7 @@ const SkillsSection = () => {
       icon: <Database className="h-8 w-8 text-navy-600" />,
       skills: [
         "MySQL",
-        "Data Analytics (NumPy & Pandas)",
+        "Data Analytics (NumPy, Pandas, KNIME & ACL)",
         "Data Visualization (Matplotlib & Seaborn)",
       ],
     },
