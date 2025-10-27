@@ -44,11 +44,9 @@ const HeroSection = () => {
 
             <Animated delay={150} direction="up">
               <p className="text-lg text-navy-800 mb-8 max-w-2xl">
-                Enthusiastic entry-level professional seeking a role as Software
-                Engineer or Machine Learning Engineer. Eager to contribute to
-                innovative projects and collaborate with cross-functional teams,
-                demonstrating effective problem-solving skills and utilizing
-                strong presentation skills and data analysis abilities.
+                KNIME L3 Certified Engineer passionate about AI, automation, and
+                low-code innovation. Skilled in building data-driven solutions
+                that bridge analytics and intelligent systems.
               </p>
             </Animated>
 
