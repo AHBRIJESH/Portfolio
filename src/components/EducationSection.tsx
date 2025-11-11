@@ -38,10 +38,6 @@ const EducationSection = () => {
               <div className="space-y-4">
                 {[
                   {
-                    icon: <Book className="h-5 w-5 text-navy-700" />,
-                    text: `Completed the seventh semester and currently in the eighth semester`,
-                  },
-                  {
                     icon: <Star className="h-5 w-5 text-navy-700" />,
                     text: `Demonstrates strong academic performance with a focus on technical and analytical skills`,
                   },
