@@ -56,7 +56,7 @@ const ProjectsSection = () => {
       github: "https://github.com/AHBRIJESH/Academic_Grade_Predictor.git",
     },
     {
-      title: "Suicidal Prevention Chatbot",
+      title: "Suicide Prevention Chatbot",
       description:
         "AI chatbot that detects distress in conversations using Seq2Seq NLP and offers empathetic support.",
       icon: <MessageSquare className="h-8 w-8 text-navy-600" />,
