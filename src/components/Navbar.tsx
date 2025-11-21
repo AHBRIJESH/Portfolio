@@ -87,9 +87,14 @@ const Navbar = () => {
         <a href="#" className="text-xl font-bold text-white flex items-center">
           <div className="w-10 h-10 rounded-full overflow-hidden mr-2 border-2 border-white">
             <img
-              src="/lovable-uploads/3beb2243-0086-46e4-9136-a01b49030d8d.png"
+              src="lovable-uploads/3beb2243-0086-46e4-9136-a01b49030d8d.jpg"
               alt="A H Brijesh"
-              className="w-full h-full object-cover"
+              style={{
+                width: "120%",
+                height: "130%",
+                objectFit: "fill",
+                transform: "translateX(00px) translateY(00px)",
+              }}
             />
           </div>
           <span className="text-white">A H BRIJESH</span>

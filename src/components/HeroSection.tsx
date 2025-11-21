@@ -1,6 +1,7 @@
 import React from "react";
 import Animated from "./Animated";
 import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 import {
   ArrowDown,
   Mail,
@@ -23,20 +24,24 @@ const HeroSection = () => {
             <Animated direction="left">
               <div className="flex items-center mb-6">
                 <div className="mr-4 hidden sm:block">
-                  <Avatar className="h-24 w-24 border-4 border-navy-300">
+                  <Avatar className="h-28 w-28 rounded-full overflow-hidden border-4 border-blue-300">
                     <AvatarImage
-                      src="/lovable-uploads/3beb2243-0086-46e4-9136-a01b49030d8d.png"
-                      alt="A H Brijesh"
+                      src="lovable-uploads\3beb2243-0086-46e4-9136-a01b49030d8d.jpg"
+                      style={{
+                        width: "120%",
+                        height: "130%",
+                        objectFit: "fill",
+                        transform: "translateX(00px) translateY(-6px)",
+                      }}
                     />
-                    <AvatarFallback>AHB</AvatarFallback>
                   </Avatar>
                 </div>
                 <div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-4">
+                  <h1 className="text-4xl md:text-2xl lg:text-6xl font-bold text-navy-900 mb-4">
                     A H BRIJESH
                   </h1>
-                  <h2 className="text-xl md:text-2xl font-medium text-navy-600 mb-6">
-                    Software Engineer • Machine Learning Enthusiast
+                  <h2 className="text-xl md:text-1xl font-medium text-navy-500 mb-6">
+                    AI Engineer • Software Developer • Automation Enthusiast
                   </h2>
                 </div>
               </div>
@@ -44,19 +49,27 @@ const HeroSection = () => {
 
             <Animated delay={150} direction="up">
               <p className="text-lg text-navy-800 mb-8 max-w-2xl">
-                KNIME L3 Certified Engineer passionate about AI, automation, and
-                low-code innovation. Skilled in building data-driven solutions
-                that bridge analytics and intelligent systems.
+                KNIME L3 Certified engineering graduate with a solid foundation
+                in AI, automation, and data-driven development. I build
+                efficient solutions using modern machine learning and software
+                engineering practices.
               </p>
             </Animated>
 
             <Animated delay={300} direction="up">
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-navy-700 hover:bg-navy-800 text-white">
-                  <a href="/lovable-uploads/Brijesh.pdf" download="Brijesh.pdf">
-                    Download Resume
+                <Button className="bg-navy-700 hover:bg-navy-800 text-white flex items-center gap-2">
+                  <a
+                    href="/lovable-uploads/Brijesh.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <FileText className="h-5 w-5" />
+                    View Resume
                   </a>
                 </Button>
+
                 <Button
                   variant="outline"
                   className="border-navy-600 text-navy-700 hover:bg-navy-100"
