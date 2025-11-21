@@ -24,9 +24,6 @@ const EducationSection = () => {
                     <h3 className="text-xl font-bold text-navy-900">
                       BE CSE | Rajiv Gandhi College of Engineering
                     </h3>
-                    <p className="text-navy-600 mt-1">
-                      Pursuing Bachelor's in Computer Science Engineering
-                    </p>
                   </div>
                   <div className="mt-2 md:mt-0 bg-navy-50 px-4 py-2 rounded-full">
                     <p className="text-navy-700 font-medium">CGPA: 8.4</p>
