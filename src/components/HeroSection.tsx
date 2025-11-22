@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7">
             <Animated direction="left">
-              <div className="flex items-center mb-4 flex-col sm:flex-row">
+              <div className="flex items-center mb-4 flex-row">
                 <div className="mr-4 flex justify-center sm:justify-start sm:items-center -mt-6">
                   <Avatar className="h-28 w-28 rounded-full overflow-hidden border-4 border-blue-300">
                     <AvatarImage
