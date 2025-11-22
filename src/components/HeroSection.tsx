@@ -22,13 +22,13 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7">
             <Animated direction="left">
-              <div className="flex items-center mb-6">
-                <div className="mr-4 hidden sm:block">
+              <div className="flex items-center mb-4 flex-col sm:flex-row">
+                <div className="mr-4 flex justify-center sm:justify-start sm:items-center -mt-6">
                   <Avatar className="h-28 w-28 rounded-full overflow-hidden border-4 border-blue-300">
                     <AvatarImage
-                      src="lovable-uploads\3beb2243-0086-46e4-9136-a01b49030d8d.jpg"
+                      src="uploads\3beb2243-0086-46e4-9136-a01b49030d8d.jpg"
                       style={{
-                        width: "120%",
+                        width: "130%",
                         height: "130%",
                         objectFit: "fill",
                         transform: "translateX(00px) translateY(-6px)",
@@ -60,7 +60,7 @@ const HeroSection = () => {
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-navy-700 hover:bg-navy-800 text-white flex items-center gap-2">
                   <a
-                    href="/lovable-uploads/Brijesh.pdf"
+                    href="/uploads/Brijesh.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
@@ -98,16 +98,6 @@ const HeroSection = () => {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-navy-300 to-navy-500 transform rotate-3 scale-105 opacity-30 blur-sm"></div>
                 <div className="rounded-2xl bg-white p-6 shadow-lg relative overflow-hidden border border-navy-100">
                   <div className="flex flex-col space-y-4">
-                    <div className="sm:hidden flex justify-center mb-4">
-                      <Avatar className="h-24 w-24 border-4 border-navy-300">
-                        <AvatarImage
-                          src="/lovable-uploads/3beb2243-0086-46e4-9136-a01b49030d8d.png"
-                          alt="A H Brijesh"
-                        />
-                        <AvatarFallback>AHB</AvatarFallback>
-                      </Avatar>
-                    </div>
-
                     {[
                       {
                         icon: <MapPin className="h-5 w-5 text-navy-700" />,
