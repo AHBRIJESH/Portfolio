@@ -116,7 +116,7 @@ const HeroSection = () => {
                       },
                       {
                         icon: <Phone className="h-5 w-5 text-navy-700" />,
-                        text: "+91 6384665931",
+                        text: "+91 63846 65931",
                       },
                       {
                         icon: (
