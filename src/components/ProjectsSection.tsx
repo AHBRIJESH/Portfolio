@@ -9,6 +9,10 @@ import {
   Briefcase,
   BriefcaseConveyorBelt,
   LucideBriefcaseBusiness,
+  Workflow,
+  WorkflowIcon,
+  LucideWorkflow,
+  NetworkIcon,
 } from "lucide-react";
 import {
   Card,
@@ -19,6 +23,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Animated from "./Animated";
+import KnimeLogo from "./assets/knime.svg";
 
 const ProjectsSection = () => {
   const projects = [
@@ -29,6 +34,15 @@ const ProjectsSection = () => {
       icon: <Smile className="h-8 w-8 text-navy-600" />,
       skills: ["Python", "NLP", "RNN", "TensorFlow", "Keras"],
       github: "https://github.com/AHBRIJESH/Sentence_Emotion_Predictor.git",
+    },
+    {
+      title: "Audit Starter Pack",
+      description:
+        "10 KNIME workflows developed to streamline audit operations and enhance reporting efficiency.",
+      icon: <NetworkIcon className="h-8 w-8 text-navy-600" />,
+      skills: ["KNIME", "EDA", "KNIME Hub", "Dynamic Reporting"],
+      github:
+        "https://hub.knime.com/a_h_brijesh/spaces/Public/Audit%20workflows%20with%20Email~fjpOCyM6rLf1UT5O/",
     },
     {
       title: "Handwriting Style Converter",
@@ -90,45 +104,55 @@ const ProjectsSection = () => {
         </Animated>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Animated key={index} delay={150 + index * 150} direction="up">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:no-underline h-full"
+          {projects.map((project, index) => {
+            const isLastAndCentered =
+              projects.length % 3 === 1 && index === projects.length - 1;
+
+            return (
+              <div
+                key={index}
+                className={isLastAndCentered ? "lg:col-start-2" : ""}
               >
-                <Card className="h-full flex flex-col justify-between border border-navy-100 bg-white/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl">
-                  <CardHeader className="pb-2 space-y-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-navy-100 to-navy-200 rounded-xl p-2 flex items-center justify-center">
-                      {project.icon}
-                    </div>
-                    <CardTitle className="text-xl font-bold text-navy-900">
-                      {project.title}
-                    </CardTitle>
-                  </CardHeader>
+                <Animated delay={150 + index * 150} direction="up">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:no-underline h-full"
+                  >
+                    <Card className="h-full flex flex-col justify-between border border-navy-100 bg-white/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl">
+                      <CardHeader className="pb-2 space-y-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-navy-100 to-navy-200 rounded-xl p-2 flex items-center justify-center">
+                          {project.icon}
+                        </div>
+                        <CardTitle className="text-xl font-bold text-navy-900">
+                          {project.title}
+                        </CardTitle>
+                      </CardHeader>
 
-                  <CardContent className="flex flex-col flex-grow space-y-4">
-                    <CardDescription className="text-navy-700 text-sm leading-relaxed flex-grow">
-                      {project.description}
-                    </CardDescription>
+                      <CardContent className="flex flex-col flex-grow space-y-4">
+                        <CardDescription className="text-navy-700 text-sm leading-relaxed flex-grow">
+                          {project.description}
+                        </CardDescription>
 
-                    <div className="flex flex-wrap gap-2 mt-auto">
-                      {project.skills.map((skill, i) => (
-                        <Badge
-                          key={i}
-                          variant="outline"
-                          className="bg-navy-50/50 text-navy-700 border-navy-200 backdrop-blur-sm font-medium"
-                        >
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </a>
-            </Animated>
-          ))}
+                        <div className="flex flex-wrap gap-2 mt-auto">
+                          {project.skills.map((skill, i) => (
+                            <Badge
+                              key={i}
+                              variant="outline"
+                              className="bg-navy-50/50 text-navy-700 border-navy-200 backdrop-blur-sm font-medium"
+                            >
+                              {skill}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </a>
+                </Animated>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
