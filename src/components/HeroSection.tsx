@@ -126,7 +126,7 @@ const HeroSection = () => {
                       },
                       {
                         icon: <Award className="h-5 w-5 text-navy-700" />,
-                        text: "8.2 CGPA at the end of Course",
+                        text: "8.4 CGPA at the end of Course",
                       },
                     ].map((item, idx) => (
                       <Animated
