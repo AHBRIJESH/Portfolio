@@ -21,28 +21,23 @@ const SkillsSection = () => {
         "MySQL",
         "Data Analytics (NumPy, Pandas, KNIME & ACL)",
         "Data Visualization (Matplotlib & Seaborn)",
+        "ETL & EDA",
       ],
     },
     {
-      title: "AI & Machine Learning",
+      title: "Machine Learning & Deployment",
       icon: <Brain className="h-8 w-8 text-navy-600" />,
       skills: [
-        "Machine Learning (Scikit-learn, TensorFlow & Keras)",
-        "Deep Learning",
-        "Natural Language Processing",
-        "Computer Vision",
+        "Machine Learning (Scikit-learn)",
+        "Deep Learning (TensorFlow, PyTorch)",
+        "Docker",
+        "Kubernetes",
       ],
     },
     {
       title: "Tools & Platforms",
       icon: <Terminal className="h-8 w-8 text-navy-600" />,
-      skills: [
-        "GitHub",
-        "Jupyter Notebook",
-        "Google Colab",
-        "VS Code",
-        "Flask",
-      ],
+      skills: ["GitHub", "Jupyter Lab", "VS Code", "Flask"],
     },
   ];
 
