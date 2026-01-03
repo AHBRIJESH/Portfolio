@@ -18,7 +18,7 @@ const SkillsSection = () => {
       title: "Database & Data",
       icon: <Database className="h-8 w-8 text-navy-600" />,
       skills: [
-        "MySQL",
+        "MySQL, MongoDB",
         "Data Analytics (NumPy, Pandas, KNIME & ACL)",
         "Data Visualization (Matplotlib & Seaborn)",
         "ETL & EDA",
@@ -30,6 +30,8 @@ const SkillsSection = () => {
       skills: [
         "Machine Learning (Scikit-learn)",
         "Deep Learning (TensorFlow, PyTorch)",
+        "LLMs & RAG (LangChain, Ollama)",
+        "Vector Databases (FAISS)",
         "Docker",
         "Kubernetes",
       ],

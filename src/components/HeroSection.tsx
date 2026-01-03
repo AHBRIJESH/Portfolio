@@ -41,7 +41,7 @@ const HeroSection = () => {
                     A H BRIJESH
                   </h1>
                   <h2 className="text-xl md:text-1xl font-medium text-navy-500 mb-6">
-                    AI Engineer • Software Developer • Automation Enthusiast
+                    AI Engineer • Software Developer • Automation Practitioner
                   </h2>
                 </div>
               </div>
@@ -49,9 +49,9 @@ const HeroSection = () => {
 
             <Animated delay={150} direction="up">
               <p className="text-lg text-navy-800 mb-8 max-w-2xl">
-                KNIME L3 Certified engineering graduate with a solid foundation
-                in AI, automation, and data-driven development. I build
-                efficient solutions using modern machine learning and software
+                KNIME L3 Certified engineering graduate with hands-on experience
+                in AI, automation, and data-driven systems. I build efficient,
+                scalable solutions using modern machine learning and software
                 engineering practices.
               </p>
             </Animated>
