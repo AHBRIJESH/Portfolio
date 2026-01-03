@@ -32,8 +32,7 @@ const SkillsSection = () => {
         "Deep Learning (TensorFlow, PyTorch)",
         "LLMs & RAG (LangChain, Ollama)",
         "Vector Databases (FAISS)",
-        "Docker",
-        "Kubernetes",
+        "Docker & Kubernetes",
       ],
     },
     {
