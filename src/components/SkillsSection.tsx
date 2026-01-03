@@ -30,8 +30,7 @@ const SkillsSection = () => {
       skills: [
         "Machine Learning (Scikit-learn)",
         "Deep Learning (TensorFlow, PyTorch)",
-        "LLMs & RAG (LangChain, Ollama)",
-        "Vector Databases (FAISS)",
+        "LangChain, Ollama, FAISS",
         "Docker & Kubernetes",
       ],
     },

@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       description:
         "CNN-based model to classify handwritten digits with high accuracy.",
       icon: <HandIcon className="h-8 w-8 text-navy-600" />,
-      skills: ["GAN", "Computer Vision", "PyTorch"],
+      skills: ["GAN", "Computer Vision", "Tensorflow"],
       github: "https://github.com/AHBRIJESH/Handwritten-Digit-Predection.git",
     },
     {
