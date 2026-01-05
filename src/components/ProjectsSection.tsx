@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Brain,
   Smile,
   MessageSquare,
   Layers,
@@ -19,6 +18,55 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Animated from "./Animated";
+
+const ProjectCard = ({ project }: { project: any }) => (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block hover:no-underline h-full"
+  >
+    <Card
+      className="
+        h-full w-full max-w-[360px] mx-auto
+        flex flex-col justify-between
+        border border-navy-100
+        bg-white
+        shadow-md sm:shadow-lg
+        hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2
+        transition-all duration-300 ease-out
+        rounded-xl
+      "
+    >
+      <CardHeader className="pb-2 space-y-3 sm:space-y-4">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-navy-100 to-navy-200 rounded-xl p-2 flex items-center justify-center">
+          {project.icon}
+        </div>
+        <CardTitle className="text-xl font-bold text-navy-900">
+          {project.title}
+        </CardTitle>
+      </CardHeader>
+
+      <CardContent className="flex flex-col flex-grow space-y-4">
+        <CardDescription className="text-navy-700 text-sm leading-relaxed flex-grow">
+          {project.description}
+        </CardDescription>
+
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {project.skills.map((skill: string, i: number) => (
+            <Badge
+              key={i}
+              variant="outline"
+              className="bg-navy-50 text-navy-700 border-navy-200 font-medium"
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  </a>
+);
 
 const ProjectsSection = () => {
   const projects = [
@@ -91,13 +139,15 @@ const ProjectsSection = () => {
   ];
 
   const remainder = projects.length % 3;
+  const normalProjects = remainder === 2 ? projects.slice(0, -2) : projects;
+  const lastTwo = remainder === 2 ? projects.slice(-2) : [];
 
   return (
     <section
       id="projects"
       className="py-20 bg-gradient-to-b from-white to-navy-50"
     >
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Animated>
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-navy-900 mb-4">Projects</h2>
@@ -108,129 +158,36 @@ const ProjectsSection = () => {
           </div>
         </Animated>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => {
-            // Handle LAST TWO cards (centered as a group)
-            if (remainder === 2 && index === projects.length - 2) {
-              return (
-                <div
-                  key="last-two-centered"
-                  className="lg:col-span-3 flex justify-center gap-8"
-                >
-                  {[projects[index], projects[index + 1]].map((proj, i) => (
-                    <Animated
-                      key={i}
-                      delay={150 + (index + i) * 150}
-                      direction="up"
-                    >
-                      <a
-                        href={proj.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block hover:no-underline w-full max-w-sm"
-                      >
-                        <Card
-                          className="
-                            h-full flex flex-col justify-between
-                            border border-navy-100
-                            bg-white/50 backdrop-blur-sm
-                            shadow-lg
-                            hover:shadow-2xl hover:-translate-y-2
-                            transition-all duration-300 ease-out
-                            rounded-xl
-                          "
-                        >
-                          <CardHeader className="pb-2 space-y-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-navy-100 to-navy-200 rounded-xl p-2 flex items-center justify-center">
-                              {proj.icon}
-                            </div>
-                            <CardTitle className="text-xl font-bold text-navy-900">
-                              {proj.title}
-                            </CardTitle>
-                          </CardHeader>
-
-                          <CardContent className="flex flex-col flex-grow space-y-4">
-                            <CardDescription className="text-navy-700 text-sm leading-relaxed flex-grow">
-                              {proj.description}
-                            </CardDescription>
-
-                            <div className="flex flex-wrap gap-2 mt-auto">
-                              {proj.skills.map((skill, j) => (
-                                <Badge
-                                  key={j}
-                                  variant="outline"
-                                  className="bg-navy-50/50 text-navy-700 border-navy-200 font-medium"
-                                >
-                                  {skill}
-                                </Badge>
-                              ))}
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </a>
-                    </Animated>
-                  ))}
-                </div>
-              );
-            }
-
-            // Skip rendering the very last card (already rendered above)
-            if (remainder === 2 && index === projects.length - 1) {
-              return null;
-            }
-
-            // Normal cards
-            return (
-              <Animated key={index} delay={150 + index * 150} direction="up">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block hover:no-underline h-full"
-                >
-                  <Card
-                    className="
-                      h-full flex flex-col justify-between
-                      border border-navy-100
-                      bg-white/50 backdrop-blur-sm
-                      shadow-lg
-                      hover:shadow-2xl hover:-translate-y-2
-                      transition-all duration-300 ease-out
-                      rounded-xl
-                    "
-                  >
-                    <CardHeader className="pb-2 space-y-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-navy-100 to-navy-200 rounded-xl p-2 flex items-center justify-center">
-                        {project.icon}
-                      </div>
-                      <CardTitle className="text-xl font-bold text-navy-900">
-                        {project.title}
-                      </CardTitle>
-                    </CardHeader>
-
-                    <CardContent className="flex flex-col flex-grow space-y-4">
-                      <CardDescription className="text-navy-700 text-sm leading-relaxed flex-grow">
-                        {project.description}
-                      </CardDescription>
-
-                      <div className="flex flex-wrap gap-2 mt-auto">
-                        {project.skills.map((skill, i) => (
-                          <Badge
-                            key={i}
-                            variant="outline"
-                            className="bg-navy-50/50 text-navy-700 border-navy-200 font-medium"
-                          >
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </a>
-              </Animated>
-            );
-          })}
+        {/* ✅ Normal projects */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {normalProjects.map((project, index) => (
+            <Animated key={index} delay={150 + index * 150} direction="up">
+              <ProjectCard project={project} />
+            </Animated>
+          ))}
         </div>
+
+        {/* 📱 Mobile / Tablet → last two normal */}
+        {lastTwo.length === 2 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 lg:hidden">
+            {lastTwo.map((project, index) => (
+              <Animated key={index} delay={150 + index * 150} direction="up">
+                <ProjectCard project={project} />
+              </Animated>
+            ))}
+          </div>
+        )}
+
+        {/* 💻 Desktop → last two centered */}
+        {lastTwo.length === 2 && (
+          <div className="hidden lg:flex justify-center gap-8 mt-10">
+            {lastTwo.map((project, index) => (
+              <Animated key={index} delay={150 + index * 150} direction="up">
+                <ProjectCard project={project} />
+              </Animated>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
