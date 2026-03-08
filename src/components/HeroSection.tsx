@@ -49,10 +49,7 @@ const HeroSection = () => {
 
             <Animated delay={150} direction="up">
               <p className="text-lg text-navy-800 mb-8 max-w-2xl">
-                KNIME L3 Certified engineering graduate with hands-on experience
-                in AI, automation, and data-driven systems. I build efficient,
-                scalable solutions using modern machine learning and software
-                engineering practices.
+                KNIME L3 Certified Computer Science graduate with hands-on experience in AI, automation, and data-driven systems, focused on building efficient and scalable solutions using modern ML and software engineering practices.
               </p>
             </Animated>
 

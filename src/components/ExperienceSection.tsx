@@ -5,26 +5,34 @@ import Animated from "./Animated";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Python Trainee Software Engineer",
+      company: "WORKTUAL",
+      period: "February 2026 – Present",
+      description: [
+        "Validated and curated datasets used in LLM workflows, improving data quality and consistency for model development.",
+        "Developed AI agents and MCP-based integrations to connect multiple services and enable automated workflows.",
+        "Investigated methods to improve LLM efficiency and behavior control, including layer sensitivity analysis."
+      ],
+    },
+    {
+      title: "AI INTERN",
+      company: "IPCS GLOBAL SOLUTIONS Pvt. Ltd.",
+      period: "February 2026 – Present",
+      description: [
+        "Validated and curated datasets used in LLM workflows, improving data quality and consistency for model development.",
+        "Developed AI agents and MCP-based integrations to connect multiple services and enable automated workflows.",
+        "Investigated methods to improve LLM efficiency and behavior control, including layer sensitivity analysis."
+      ],
+    },
+    {
       title: "BUSINESS ANALYST INTERN",
       company: "AAMIN DATA SOLUTIONS",
       period: "MAY 2025 – NOVEMBER 2025",
       description: [
         "Designed and maintained 10+ KNIME workflows to identify data outliers.",
-        "Built data integrity check components to validate datasets before audits.",
         "Developed intuitive KNIME-based GUIs to streamline audit navigation.",
         "Explored AI techniques to enhance exception detection.",
         "Generated audit insights and automated reports to reduce manual workload.",
-      ],
-    },
-    {
-      title: "AI INTERN",
-      company: "AICTE INNOVATIVE INTERN",
-      period: "AUGUST 2024 – NOVEMBER 2024",
-      description: [
-        "Developed a Face Recognition-Based Attendance System using Flask, TensorFlow, CNN, Keras, and MySQL",
-        "Achieved 97% accuracy, automating attendance tracking and reducing manual effort by 60%",
-        "Enabled recognition of 5 individuals within 10 seconds, showcasing expertise in deep learning and problem-solving",
-        "Collaborated with team members to ensure the efficient delivery of the solution with a focus on user-centric design",
       ],
     },
     {
@@ -32,11 +40,9 @@ const ExperienceSection = () => {
       company: "FORD MOTOR COMPANY",
       period: "JUNE 2024 – AUGUST 2024",
       description: [
-        "Gained expertise in SAP ERP for the automotive sector, working on data migration and system optimization",
-        "Applied ABAP OOP and data conversion techniques (RFC, LSMW, LTMC, BAPI) to enhance data accuracy for vehicle production workflows",
-        "Contributed to RICEF development, optimizing SAP ABAP programming to improve data migration efficiency by 20%",
-        "Ensured 100% data accuracy during migration, minimizing transition errors",
-        "Collaborated with cross-functional teams to deliver seamless and reliable SAP solutions",
+        "Supported large-scale SAP ERP data migration using ABAP OOP, BDC, LSMW, LTMC, and BAPI tools.",
+        "Optimized ABAP programs and RICEF developments, improving migration efficiency by 20%.",
+        "Ensured high data accuracy and consistency across migrated datasets."
       ],
     },
     {
