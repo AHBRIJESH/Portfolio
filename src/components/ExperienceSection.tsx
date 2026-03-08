@@ -17,7 +17,7 @@ const ExperienceSection = () => {
     {
       title: "AI INTERN",
       company: "IPCS GLOBAL SOLUTIONS Pvt. Ltd.",
-      period: "February 2026 – Present",
+      period: "Novemebr 2025 – January 2026",
       description: [
         "Validated and curated datasets used in LLM workflows, improving data quality and consistency for model development.",
         "Developed AI agents and MCP-based integrations to connect multiple services and enable automated workflows.",
