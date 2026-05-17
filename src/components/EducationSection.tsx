@@ -26,7 +26,7 @@ const EducationSection = () => {
                     </h3>
                   </div>
                   <div className="mt-2 md:mt-0 bg-navy-50 px-4 py-2 rounded-full">
-                    <p className="text-navy-700 font-medium">CGPA: 8.4</p>
+                    <p className="text-navy-700 font-medium">CGPA: 8.2</p>
                   </div>
                 </div>
               </Animated>
