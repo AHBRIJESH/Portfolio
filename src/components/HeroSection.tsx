@@ -55,17 +55,17 @@ const HeroSection = () => {
 
             <Animated delay={300} direction="up">
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-navy-700 hover:bg-navy-800 text-white flex items-center gap-2">
-                  <a
-                    href="/uploads/Brijesh.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    <FileText className="h-5 w-5" />
-                    View Resume
-                  </a>
-                </Button>
+                <Button asChild className="bg-navy-700 hover:bg-navy-800 text-white">
+  <a
+    href="/uploads/Brijesh.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2"
+  >
+    <FileText className="h-5 w-5" />
+    View Resume
+  </a>
+</Button>
 
                 <Button
                   variant="outline"
