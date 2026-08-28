@@ -9,9 +9,10 @@ const ExperienceSection = () => {
       company: "WORKTUAL",
       period: "February 2026 – Present",
       description: [
-        "Validated and curated datasets used in LLM workflows, improving data quality and consistency for model development.",
-        "Developed AI agents and MCP-based integrations to connect multiple services and enable automated workflows.",
-        "Investigated methods to improve LLM efficiency and behavior control, including layer sensitivity analysis."
+        "Curated ontology-driven datasets for LLM training and evaluation, improving contextual consistency and data quality.",
+        "Built AI-agent pipelines to automate workflows and coordinate multi-step business processes.",
+        "Fine-tuned and evaluated LLMs using LoRA/QLoRA with Unsloth for parameter-efficient training.",
+        "Optimized local and production LLM inference using vLLM for improved serving performance.",
       ],
     },
     {

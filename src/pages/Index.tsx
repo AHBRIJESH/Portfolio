@@ -8,6 +8,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
 import CredlyBadges from "@/components/CredlyBadges";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <CredlyBadges />
       <ContactSection />
       <Footer />
+      <Chatbot />
     </div>
   );
 };

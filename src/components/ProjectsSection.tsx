@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Animated from "./Animated";
+import { Bot } from "lucide-react";
 
 const ProjectCard = ({ project }: { project: any }) => (
   <a
@@ -70,6 +71,14 @@ const ProjectCard = ({ project }: { project: any }) => (
 
 const ProjectsSection = () => {
   const projects = [
+{
+  title: "MiniMe AI Personal Assistant",
+  description:
+    "AI-powered personal assistant with knowledge of my career, projects, and skills.",
+  icon: <Bot className="h-8 w-8 text-navy-600" />,
+  skills: ["PEFT", "QLoRA", "Unsloth", "Hugging Face", "llama.cpp", "Kaggle"],
+  github: "https://huggingface.co/brijeshah",
+},
     {
       title: "Audit RAG System",
       description:
