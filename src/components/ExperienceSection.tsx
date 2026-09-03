@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     {
       title: "Python Trainee Software Engineer",
       company: "WORKTUAL",
-      period: "February 2026 – Present",
+      period: "February 2026 – August 2026",
       description: [
         "Curated ontology-driven datasets for LLM training and evaluation, improving contextual consistency and data quality.",
         "Built AI-agent pipelines to automate workflows and coordinate multi-step business processes.",
